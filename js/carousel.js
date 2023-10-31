@@ -10,3 +10,4 @@ leftArrow.addEventListener('click', () => {
 rightArrow.addEventListener('click', () => {
     carusellContainer.scrollLeft += 335;
 });
+

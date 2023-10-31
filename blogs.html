@@ -6,18 +6,21 @@
     <meta name="description" content=""/>
     <link href="css/style.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/ad221245c2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Young+Serif&display=swap" rel="stylesheet">
     <title>Kiks lager mat | Alle oppskrifter</title>
 </head>
 <body>
     <header>
-        <div class="logo"><a href="index.html"><img src="Assets/bilder/Logo2.png" alt="Logo"></a></div>
+        <div class="logo"><a href="index.html"><img src="Assets/bilder/logo3.png" alt="Logo"></a></div>
         <h1>Kiks lager mat</h1>
         <div>
             <label for="hamburger-menu" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
             <input type="checkbox" id="hamburger-menu">
             <nav class="navigation">
                 <ul class="menu">
-                    <li><a href="blogs.html">Oppskrifter</a></li>
+                    <li><a href="blogs.html" class="current">Oppskrifter</a></li>
                     <li><a href="about.html">Om meg</a></li>
                     <li><a href="contact.html">Kontakt</a></li>
                 </ul>
@@ -26,13 +29,13 @@
     </header>
     <main>
         <h2>Oppskrifter</h2>
-        <div class="blogg-liste">
-            <div class="blogg-list-img"></div>
-            <div class="blogg-list-h2"></div>
-            <div class="blogg-list-text"></div>
-        </div>
-        <div class="cta"><a href="">Vis fler</a></div>
-
+        <section class="blog-main">
+            <div class="blogg-liste" id="blogg-liste">
+                <div class="blogg-list-h2"></div>
+                <div class="blogg-list-img"></div>
+            </div>
+            <button class="cta" id="loadMoreButton">Vis fler</button>
+        </section>
     </main>
     <footer>
         <div class="icons">
@@ -41,5 +44,6 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/blogposts2.js"></script>
 </body>
 </html>
