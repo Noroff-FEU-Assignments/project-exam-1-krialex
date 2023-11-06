@@ -235,6 +235,11 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 20px;
+}
+.spesific-content img {
+    height: fit-content;
+    width: fit-content;
 }
 .modal-content {
     border: 6px solid black;
