@@ -4,10 +4,10 @@ const carusellContainer = document.querySelector('.carusell');
 
 
 leftArrow.addEventListener('click', () => {
-    carusellContainer.scrollLeft -= 335;
+    carusellContainer.scrollLeft -= 400;
 });
 
 rightArrow.addEventListener('click', () => {
-    carusellContainer.scrollLeft += 335;
+    carusellContainer.scrollLeft += 400;
 });
 
