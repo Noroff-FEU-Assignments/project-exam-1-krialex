@@ -8,6 +8,7 @@ const subjectError = document.getElementById("subject-error");
 const message = document.getElementById("message");
 const messageError = document.getElementById("message-error");
 const button = document.querySelector(".cta");
+const successMessage = document.querySelector(".success");
 
 function validateForm(event) {
     let errorAccured = false;
@@ -24,13 +25,13 @@ function validateForm(event) {
     } else {
         errorEmail.style.display = "none";
     }
-    if(!checkLength(subject.value, 3)) {
+    if(!checkLength(subject.value, 15)) {
         subjectError.style.display = "block";
         errorAccured = true;
     } else {
         subjectError.style.display = "none";
     }
-    if(!checkLength(message.value, 15)) {
+    if(!checkLength(message.value, 25)) {
         messageError.style.display = "block";
         errorAccured = true;
     } else {
@@ -42,6 +43,8 @@ function validateForm(event) {
     } else {
         event.preventDefault();
         form.reset();
+
+        successMessage.innerHTML += `<div class="successMessage">Din melding er sendt, vi tar kontakt snarest!</div>`;
     }
     console.log("funker");
 }

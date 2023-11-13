@@ -24,6 +24,10 @@ header {
     justify-content: space-evenly;
     padding-bottom: 10px;
 }
+header a {
+    text-decoration: none;
+    color: var(--white);
+}
 h1 {
     font-family: var(--headerfont);
 }
@@ -215,7 +219,7 @@ main {
 .about-section {
     display: flex;
     max-width: 660px;
-    margin: 50px auto;
+    margin: 10px auto;
     gap: 30px;
     text-align: left;
 }
@@ -224,8 +228,8 @@ main {
 }
 /*spesific page*/
 .spesific-page {
-    max-width: 600px;
-    margin: 20px auto;
+    max-width: 500px;
+    margin: 0px auto;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -239,7 +243,7 @@ main {
 }
 .spesific-content img {
     height: fit-content;
-    width: fit-content;
+    width: 500px;
 }
 .modal-content {
     border: 6px solid black;
@@ -255,6 +259,14 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.comment-section {
+    margin: 20px auto;
+    max-width: 600px;
+}
+.comment-form {
+    margin-top: 30px;
+    text-align: left;
 }
 
 
@@ -287,6 +299,14 @@ form {
 input {
     padding: 3px;
 }
+.successMessage {
+    border: 1px solid var(--green);
+    width: fit-content;
+    padding: 20px 30px;
+    background-color: var(--green);
+    color: #FFF;
+    margin: 0px auto;
+}
 
  @media (max-width: 800px) {
     .menu {
@@ -311,10 +331,30 @@ input {
     .hamburger-icon {
         display: block;
     }
+    .spesific-content img {
+        max-width: 400px;
+    }
  }
 
  @media (max-width: 600px) {
     .blogg-liste {
         grid-template-columns: 1fr;
+    }
+    .spesific-content img {
+        max-width: 300px;
+    }
+    .about-section {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+ }
+
+ @media (max-width: 400px) {
+    .spesific-content img {
+        max-width: 250px;
+    }
+    h1 {
+        font-size: 1.5em;
     }
  }

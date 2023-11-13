@@ -1,6 +1,7 @@
 const wpRestApi = "https://unipop.no/bloggapi/wp-json/wp/v2/posts";
 const postsContainer = document.getElementById("blogg-liste");
 const loadMoreButton = document.getElementById("loadMoreButton");
+const toTopButton = document.getElementById("toTopButton");
 
 const perPage = 20;
 let visiblePosts = 0;
@@ -36,6 +37,8 @@ async function getFirstPosts() {
         if (visiblePosts >= 10) {
             loadMoreButton.style.display = "block";
             loadMoreButton.addEventListener('click', loadMorePosts);
+
+            toTopButton.style.display = "none";
         } else {
             loadMoreButton.style.display = "none";
         }
@@ -67,7 +70,14 @@ function loadMorePosts() {
 
     if (postJsonData.length <= visiblePosts) {
         loadMoreButton.style.display = "none";
+
+        toTopButton.style.display = "block";
+        toTopButton.addEventListener('click', () => window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+          }))
     }
 }
 
 getFirstPosts();
+

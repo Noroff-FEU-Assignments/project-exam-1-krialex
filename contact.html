@@ -25,7 +25,7 @@
 <body>
     <header>
         <div class="logo"><a href="index.html"><img src="Assets/bilder/logo3.png" alt="Logo"></a></div>
-        <h1>Kiks lager mat</h1>
+        <a href="index.html"><h1>Kiks lager mat</h1></a>
         <div>
             <label for="hamburger-menu" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
             <input type="checkbox" id="hamburger-menu">
@@ -40,6 +40,7 @@
     </header>
     <main>
         <h2>Kontakt meg</h2>
+        <div class="success"></div>
         <div class="kontakt-skjema">
             <form>
                 <div>
@@ -58,13 +59,13 @@
                     <label for="subject" class="form-lable">Emne
                         <input type="text" id="subject" name="subject" placeholder="Emne">
                     </label>
-                    <div class="form-error" id="subject-error">Skriv inn emne på meldingen her, minst 3 tegn</div>
+                    <div class="form-error" id="subject-error">Skriv inn emne på meldingen her, minst 15 tegn</div>
                 </div>
                 <div>
                     <label for="message" class="form-lable">Din melding
                         <textarea id="message" name="message" placeholder="Din melding"></textarea>
                     </label>
-                    <div class="form-error" id="message-error">Du må skrive minst 15 tegn</div>
+                    <div class="form-error" id="message-error">Du må skrive minst 25 tegn</div>
                 </div>
 
                 <button class="cta">Send melding</button>
