@@ -224,7 +224,7 @@ main {
 .about-section {
     display: flex;
     max-width: 660px;
-    margin: 10px auto;
+    margin: 40px auto;
     gap: 30px;
     text-align: left;
 }
