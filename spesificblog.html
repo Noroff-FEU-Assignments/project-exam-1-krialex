@@ -41,27 +41,32 @@
     <main>
         <div class="blog-post-site"></div>
             
+       <!--
         <div class="comment-section">
             <h3>Legg igjen en kommentar</h3>
             <form class="comment-form">
                 <div>
-                    <lable for="name" class="form-lable">Navn
-                        <input type="text" id="name" name="name" placeholder="Ditt navn">
+                    <lable for="commentName" class="form-lable">Navn
+                        <input type="text" id="commentName" name="commentName" placeholder="Ditt navn">
                     </lable>
+                    <div class="comment-error" id="commentName-error">Fyll inn ditt navn</div>
                 </div>
                 <div>
-                    <label for="email" class="form-lable">Email
-                        <input type="text" id="email" name="email" placeholder="Din email-adresse">
+                    <label for="commentEmail" class="form-lable">Email
+                        <input type="text" id="commentEmail" name="commentEmail" placeholder="Din email-adresse">
                     </label>
+                    <div class="comment-error" id="commentEmail-error">Skriv din email-addresse</div>
                 </div>
                 <div>
-                    <label for="comment" class="form-lable">Kommentar
-                        <textarea id="message" name="comment" placeholder="Skriv din kommentar"></textarea>
+                    <label for="commentMessage" class="form-lable">Kommentar
+                        <textarea id="commentMessage" name="commentMessage" placeholder="Skriv din kommentar"></textarea>
                     </label>
+                    <div class="comment-error" id="commentMessage-error">Fyll inn ditt navn</div>
                 </div>
-                <button class="cta contact-cta">Send inn</button>
+                <button type="button" onclick="sendComments()" class="cta contact-cta">Send inn</button>
             </form>
         </div>
+       --> 
     </main>
     <footer>
         <div class="icons">
@@ -71,7 +76,7 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/spesificblog.js"></script>
-    <script src="js/comments.js"></script>
+    <!-- <script src="js/comments.js"></script> -->
     
 </body>
 </html>

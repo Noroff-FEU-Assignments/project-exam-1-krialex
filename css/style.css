@@ -213,6 +213,11 @@ main {
  }
  .blogg-item.show {
     display: block;
+    border: 1px solid var(--blue);
+    padding: 20px 10px;
+    background-color: #F1F6FE;
+    border-radius: 4px;
+    margin: 0px 10px;
  }
 
  /*about-page*/
@@ -271,7 +276,7 @@ main {
 
 
 /*Contact page*/
-.form-error {
+.form-error, .comment-error {
     display: none;
     color: red;
     font-size: .5em;

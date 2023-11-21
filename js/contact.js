@@ -13,7 +13,7 @@ const successMessage = document.querySelector(".success");
 function validateForm(event) {
     let errorAccured = false;
 
-    if(!checkLength(userName.value, 5)) {
+    if(!checkLength(userName.value, 3)) {
         errorName.style.display = "block";
         errorAccured = true;
     } else {
