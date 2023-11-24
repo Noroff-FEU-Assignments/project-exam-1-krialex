@@ -2,6 +2,8 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
+const bloggListName = document.querySelector(".spesificblog-list");
+
 console.log(id);
 
 const postContainer = document.querySelector(".blog-post-site");
@@ -44,6 +46,8 @@ async function blogPost() {
         const blogJson = await blogResponse.json();
 
         postContainer.innerHTML += `<div class="spesific-page"><h2>${blogJson.title.rendered}</h2><div class="spesific-content">${blogJson.content.rendered}</div></div>`;
+
+        bloggListName.innerHTML += `<li>${blogJson.title.rendered}</li>`;
         
         console.log(blogJson);
     } catch(error) {

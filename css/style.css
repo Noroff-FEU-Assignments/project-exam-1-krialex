@@ -132,6 +132,7 @@ main {
     justify-content: center;
     align-items: center;
     margin: 20px auto;
+    background-color: var(--white);
  }
  .wrapper i {
     position: absolute;
@@ -219,6 +220,15 @@ main {
     background-color: var(--white);
     border-radius: 4px;
     margin: 0px 10px;
+ }
+ .nav-list, .nav-list a {
+    color: var(--blue);
+ }
+ .nav-list li {
+    margin-right: 0px;
+ }
+ .nav-two {
+    margin: 20px 0px 0px 20px;
  }
 
  /*about-page*/
