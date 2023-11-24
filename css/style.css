@@ -111,16 +111,17 @@ main {
     color: #FFF;
     text-decoration: none;
 }
-.cta {
+.cta, .contact-cta {
     border: 1px solid var(--green);
-    width: fit-content;
+    width: -moz-available;
+    margin: 10% 20%;
     padding: 10px 20px;
     background-color: var(--green);
     color: #FFF;
     cursor: pointer;
-    margin: 50px auto;
+    
 }
-.cta:hover {
+.cta:hover, .contact-cta:hover {
     transform: scale(1.07);
     transition-duration: 1s;
 }
@@ -213,9 +214,9 @@ main {
  }
  .blogg-item.show {
     display: block;
-    border: 1px solid var(--blue);
+    border: 1px solid var(--white);
     padding: 20px 10px;
-    background-color: #F1F6FE;
+    background-color: var(--white);
     border-radius: 4px;
     margin: 0px 10px;
  }
@@ -233,8 +234,10 @@ main {
 }
 /*spesific page*/
 .spesific-page {
-    max-width: 500px;
-    margin: 0px auto;
+    background-color: white;
+    padding: 0px 40px 40px 40px;
+    margin: 20px auto 0px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -266,12 +269,18 @@ main {
     align-items: center;
 }
 .comment-section {
-    margin: 20px auto;
+    margin: 0px auto;
     max-width: 600px;
+    padding: 50px;
+    width: 100%;
+    background-color: var(--white);
 }
 .comment-form {
     margin-top: 30px;
     text-align: left;
+}
+#commentMessage {
+    height: 100px;
 }
 
 
@@ -282,14 +291,13 @@ main {
     font-size: .5em;
     padding: 0px 10px
 }
-form {
+.contact-form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 500px;
     padding: 30px;
     margin: 30px auto;
-    border: 2px solid;
-    background-color: #FFF;
+    background-color: var(--white);
     text-align: left;
 }
 .form-lable {
